@@ -8,6 +8,9 @@ public class SkyscraperSpawner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		// Ensure speed starts at 10
+		speed = 10f;
+		Debug.Log("Speed restarted at scene reload");
 
 		// aysnchronous infinite skyscraper spawning
 		StartCoroutine(SpawnSkyscrapers());
